@@ -8,9 +8,14 @@
 #include "../inc/linkedList.h"
 
 /**
+ * @brief A function to display error message.
+ *
  * This is a static method which prints an error message in standard error stream -stderr. You can create
  * your own error handler and add some more procedures in the function. This function is not displayed in header
  * file.
+ *
+ * @param	message Message to be displayed.
+ * @return	void, Returns nothing.
  */
 inline static void showListError(char *message){
 	fputs(message, stderr);
@@ -32,6 +37,7 @@ void addAtListHead(List_t *list, Node_t *node){
 		list->head = node;
 	}
 }
+
 
 
 void addAtListTail(List_t *list, Node_t *node){
@@ -202,11 +208,11 @@ Node_t *searchList(List_t *list, int data){
 void reverseList(List_t *list){
 	if(isListDestroyed(list) || isListEmpty(list))
 		showListError("Cannot reverse the list. The list is empty or destroyed.\n");
-
+/* XOR list is symmetric in nature, only reversing the head and tail will reverse the whole list. */
 	else {
-		Node_t *swap = list ->head;
+		Node_t *swapHead = list ->head;
 		list->head = list->tail;
-		list->tail = swap;
+		list->tail = swapHead;
 	}
 }
 
@@ -218,6 +224,7 @@ void traverseList(List_t *list, char separator, FILE *stream){
 		Node_t *prevNode = NULL;
 		Node_t *currentNode = list->head;
 		while(currentNode != NULL){
+		/** If the current node is last node, then new line character is used instead of separator character */
 			fprintf(stream, "%d%c", currentNode->data, ((currentNode != list->tail)?separator:'\n'));
 			Node_t *temp = currentNode;
 			currentNode = NEXTNODE(prevNode, currentNode);
