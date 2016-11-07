@@ -33,8 +33,14 @@ Header file here: @ref linkedList.h
 
 Source file here: @ref linkedList.c
 
+@subsection BinarySearchTree
+Binary Search Tree is a recursive data structure consisiting of nodes. Every node can have maximum of two nodes which must satisfy a property. The
+property states that key of the left node of any node should be less than(or equal for some cases) the key of that node and key of right node of any node
+should be greater than that node. There are three general ways of traversing the tree elements - inorder, preorder and postorder.
 
+Header file here: @ref binarySearchTree.h
 
+Source file here: @ref binarySearchTree.c
 
 @section About
 @version 1.0

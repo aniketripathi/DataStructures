@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['nextnode',['NEXTNODE',['../linked_list_8h.html#a38f0e26b98febea75c508482154823ed',1,'linkedList.h']]],
-  ['node_5ft',['Node_t',['../linked_list_8h.html#a53e8b4f5e879a609a411ad25f3044f43',1,'linkedList.h']]]
+  ['mainpage_2edox',['mainpage.dox',['../mainpage_8dox.html',1,'']]],
+  ['maximumbst',['maximumBST',['../binary_search_tree_8h.html#a6dae3a281d8dbf16714cfed97bbbf4d7',1,'maximumBST(Node_t **root):&#160;binarySearchTree.c'],['../binary_search_tree_8c.html#a6dae3a281d8dbf16714cfed97bbbf4d7',1,'maximumBST(Node_t **root):&#160;binarySearchTree.c']]],
+  ['minimumbst',['minimumBST',['../binary_search_tree_8h.html#a09b97b3b32e7972e8cd2e16349f0812d',1,'minimumBST(Node_t **root):&#160;binarySearchTree.c'],['../binary_search_tree_8c.html#a09b97b3b32e7972e8cd2e16349f0812d',1,'minimumBST(Node_t **root):&#160;binarySearchTree.c']]]
 ];

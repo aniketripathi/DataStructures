@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['head',['head',['../struct_list__t.html#a4cd0a86bd26d4f568bcf2706a7a5af12',1,'List_t::head()'],['../struct_queue__t.html#ad41039455f9edb119063421a9e338f37',1,'Queue_t::head()']]]
+  ['enqueue',['enqueue',['../queue_8h.html#a02c606e5bb66378cb7c4ce66c497970b',1,'enqueue(Queue_t *queue, int number):&#160;queue.c'],['../queue_8c.html#a02c606e5bb66378cb7c4ce66c497970b',1,'enqueue(Queue_t *queue, int number):&#160;queue.c']]]
 ];

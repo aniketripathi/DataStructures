@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['pop',['pop',['../stack_8h.html#a40f3a115f39e4bf1ed1af76231eb5ad7',1,'pop(Stack_t *stack):&#160;stack.c'],['../stack_8c.html#a40f3a115f39e4bf1ed1af76231eb5ad7',1,'pop(Stack_t *stack):&#160;stack.c']]],
-  ['previousnext',['previousNext',['../struct_list_node.html#a725474948e37c075e460e1215b159688',1,'ListNode']]],
-  ['push',['push',['../stack_8h.html#ad76ee20bb2673e4a6c716b8d99de526a',1,'push(Stack_t *stack, int number):&#160;stack.c'],['../stack_8c.html#ad76ee20bb2673e4a6c716b8d99de526a',1,'push(Stack_t *stack, int number):&#160;stack.c']]]
+  ['nextnode',['NEXTNODE',['../linked_list_8h.html#a38f0e26b98febea75c508482154823ed',1,'linkedList.h']]],
+  ['node_5ft',['Node_t',['../binary_search_tree_8h.html#a8ca06e83620cd1564591e65407096bc2',1,'Node_t():&#160;binarySearchTree.h'],['../linked_list_8h.html#a53e8b4f5e879a609a411ad25f3044f43',1,'Node_t():&#160;linkedList.h']]]
 ];

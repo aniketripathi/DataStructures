@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pop',['pop',['../stack_8h.html#a40f3a115f39e4bf1ed1af76231eb5ad7',1,'pop(Stack_t *stack):&#160;stack.c'],['../stack_8c.html#a40f3a115f39e4bf1ed1af76231eb5ad7',1,'pop(Stack_t *stack):&#160;stack.c']]],
-  ['push',['push',['../stack_8h.html#ad76ee20bb2673e4a6c716b8d99de526a',1,'push(Stack_t *stack, int number):&#160;stack.c'],['../stack_8c.html#ad76ee20bb2673e4a6c716b8d99de526a',1,'push(Stack_t *stack, int number):&#160;stack.c']]]
+  ['maximumbst',['maximumBST',['../binary_search_tree_8h.html#a6dae3a281d8dbf16714cfed97bbbf4d7',1,'maximumBST(Node_t **root):&#160;binarySearchTree.c'],['../binary_search_tree_8c.html#a6dae3a281d8dbf16714cfed97bbbf4d7',1,'maximumBST(Node_t **root):&#160;binarySearchTree.c']]],
+  ['minimumbst',['minimumBST',['../binary_search_tree_8h.html#a09b97b3b32e7972e8cd2e16349f0812d',1,'minimumBST(Node_t **root):&#160;binarySearchTree.c'],['../binary_search_tree_8c.html#a09b97b3b32e7972e8cd2e16349f0812d',1,'minimumBST(Node_t **root):&#160;binarySearchTree.c']]]
 ];
