@@ -69,7 +69,7 @@ typedef struct{
  /**
   * Deletes an element from the queue from the position head and returns that element.
   * @param queue	Queue where this operation is to be performed.
-  * @return Element which was added first among the numbers. If stack is empty 0 is returned and an error message
+  * @return 		Element which was added first among the numbers. If stack is empty 0 is returned and an error message
   * 			is displayed
   */
  int dequeue(Queue_t *queue);
