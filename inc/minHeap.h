@@ -12,9 +12,18 @@
 #include <stdlib.h>
 #include <limits.h>
 
+/**
+ * @brief Structure defining the min-heap or priority queue.
+ */
 typedef struct{
+
+/** @brief Array of long int storing the elements **/
 	long int *arr;
+
+/** @brief Stores the current size of the heap **/
 	long int heapSize;
+
+/** @brief Stores the maximum possible size of the heap. **/
 	long int maxSize;
 }MinHeap;
 
