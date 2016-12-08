@@ -293,10 +293,12 @@ Functions</h2></td></tr>
 <p>Inserts a key into the heap. </p>
 <p>Inserts a key into the given heap and modifies the heap to maintain its property. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">heap</td><td>Where key is to be inserted.  key Key to be inserted. </td></tr>
+    <tr><td class="paramname">heap</td><td>Where key is to be inserted. </td></tr>
+    <tr><td class="paramname">key</td><td>Key to be inserted. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>void. Returns nothing. </dd></dl>
 <p>assume the key to be infinite - here LONG_MAX</p>
 <p>decrease to the required key </p>
 
@@ -356,7 +358,8 @@ Functions</h2></td></tr>
 <p>MinHeapify is an function that is used to correct the heap whenever a key violates a property of the heap. This function doesn't modifies the whole heap. It just modifies the given index nodes and its children if required so that the sub-heap formed by index node maintains the heap property.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">heap</td><td>Where the operation is to be performed.  Index(or node) which is to be checked and corrected for violating heap property. </td></tr>
+    <tr><td class="paramname">heap</td><td>Where the operation is to be performed. </td></tr>
+    <tr><td class="paramname">index</td><td>Index(or node) which is to be checked and corrected for violating heap property. </td></tr>
   </table>
   </dd>
 </dl>

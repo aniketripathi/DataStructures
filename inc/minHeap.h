@@ -62,7 +62,8 @@ long int heapExtractMinimum(MinHeap *heap);
  *
  * Inserts a key into the given heap and modifies the heap to maintain its property.
  * @param heap Where key is to be inserted.
- * @parem key Key to be inserted.
+ * @param key Key to be inserted.
+ * @return void. Returns nothing.
  */
 void heapInsert(MinHeap *heap, long int key);
 
@@ -86,7 +87,7 @@ long int heapMinimum(MinHeap *heap);
  * node maintains the heap property.
  *
  * @param heap Where the operation is to be performed.
- * @index	Index(or node) which is to be checked and corrected for violating heap property.
+ * @param index	Index(or node) which is to be checked and corrected for violating heap property.
  * @return void. Returns nothing.
  */
 void minHeapify(MinHeap *heap, long int index);
