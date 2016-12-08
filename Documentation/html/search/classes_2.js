@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['queue_5ft',['Queue_t',['../struct_queue__t.html',1,'']]]
+  ['minheap',['MinHeap',['../struct_min_heap.html',1,'']]]
 ];

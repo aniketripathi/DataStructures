@@ -1,6 +1,7 @@
 var searchData=
 [
   ['createbstnode',['createBSTNode',['../binary_search_tree_8h.html#a436d14be6f8788578c26fbc9d8ef8463',1,'createBSTNode(int data):&#160;binarySearchTree.c'],['../binary_search_tree_8c.html#a436d14be6f8788578c26fbc9d8ef8463',1,'createBSTNode(int data):&#160;binarySearchTree.c']]],
+  ['createheap',['createHeap',['../min_heap_8h.html#a1936fb6926ad19d46088d34a606a4ab4',1,'createHeap(long int maxSize):&#160;minHeap.c'],['../min_heap_8c.html#a1936fb6926ad19d46088d34a606a4ab4',1,'createHeap(long int maxSize):&#160;minHeap.c']]],
   ['createlist',['createList',['../linked_list_8h.html#a421186b8d87adced368f8396129a25f8',1,'createList(size_t number, int data):&#160;linkedList.c'],['../linked_list_8c.html#a421186b8d87adced368f8396129a25f8',1,'createList(size_t number, int data):&#160;linkedList.c']]],
   ['createlistnode',['createListNode',['../linked_list_8h.html#ac5450997f8320fdf3d49a3218da0f93d',1,'createListNode(int data):&#160;linkedList.c'],['../linked_list_8c.html#ac5450997f8320fdf3d49a3218da0f93d',1,'createListNode(int data):&#160;linkedList.c']]],
   ['createlistwithnode',['createListWithNode',['../linked_list_8h.html#ab5a0053e15c4f512a5a07f66eb60c9ee',1,'createListWithNode(Node_t *node):&#160;linkedList.c'],['../linked_list_8c.html#ab5a0053e15c4f512a5a07f66eb60c9ee',1,'createListWithNode(Node_t *node):&#160;linkedList.c']]],

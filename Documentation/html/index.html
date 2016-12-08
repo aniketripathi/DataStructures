@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -83,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li class="level2"><a href="#Queue">Queue</a></li>
 <li class="level2"><a href="#LinkedList">LinkedList</a></li>
 <li class="level2"><a href="#BinarySearchTree">BinarySearchTree</a></li>
+<li class="level2"><a href="#PriorityQueue">PriorityQueue</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#About">About</a></li>
@@ -112,6 +114,11 @@ BinarySearchTree</h2>
 <p>Binary Search Tree is a recursive data structure consisiting of nodes. Every node can have maximum of two nodes which must satisfy a property. The property states that key of the left node of any node should be less than(or equal for some cases) the key of that node and key of right node of any node should be greater than that node. There are three general ways of traversing the tree elements - inorder, preorder and postorder.</p>
 <p>Header file here: <a class="el" href="binary_search_tree_8h.html">binarySearchTree.h</a></p>
 <p>Source file here: <a class="el" href="binary_search_tree_8c.html">binarySearchTree.c</a></p>
+<h2><a class="anchor" id="PriorityQueue"></a>
+PriorityQueue</h2>
+<p>Priority Queue is a data structure in which elements with low priority is accessed first over others. Priority Queue can be implemented through various other data structures like queue but here minimum heap also known as min-heap is used. Min-heap is a binary tree which must satisfy the following property - every parent node must be smaller than both of its children. We don't need to create whole different node object as heap can be implement on simple array due to its efficient technique of labeling nodes.</p>
+<p>Header file here: <a class="el" href="min_heap_8h.html">minheap.h</a></p>
+<p>Source file here: <a class="el" href="min_heap_8c.html">minHeap.c</a></p>
 <h1><a class="anchor" id="About"></a>
 About</h1>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>

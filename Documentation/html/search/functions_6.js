@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['pop',['pop',['../stack_8h.html#a40f3a115f39e4bf1ed1af76231eb5ad7',1,'pop(Stack_t *stack):&#160;stack.c'],['../stack_8c.html#a40f3a115f39e4bf1ed1af76231eb5ad7',1,'pop(Stack_t *stack):&#160;stack.c']]],
-  ['postordertraversalbst',['postorderTraversalBST',['../binary_search_tree_8h.html#a8f565c04f54945116399fbf9e22234e6',1,'postorderTraversalBST(Node_t **root):&#160;binarySearchTree.c'],['../binary_search_tree_8c.html#a8f565c04f54945116399fbf9e22234e6',1,'postorderTraversalBST(Node_t **root):&#160;binarySearchTree.c']]],
-  ['predecessorbst',['predecessorBST',['../binary_search_tree_8h.html#a89162c8f852dc8c0aa5ddf4d647370e5',1,'predecessorBST(Node_t **root, Node_t *node):&#160;binarySearchTree.c'],['../binary_search_tree_8c.html#a89162c8f852dc8c0aa5ddf4d647370e5',1,'predecessorBST(Node_t **root, Node_t *node):&#160;binarySearchTree.c']]],
-  ['preordertraversalbst',['preorderTraversalBST',['../binary_search_tree_8h.html#a82e49068ef9a86ebd87d8805143dbc46',1,'preorderTraversalBST(Node_t **root):&#160;binarySearchTree.c'],['../binary_search_tree_8c.html#a82e49068ef9a86ebd87d8805143dbc46',1,'preorderTraversalBST(Node_t **root):&#160;binarySearchTree.c']]],
-  ['push',['push',['../stack_8h.html#ad76ee20bb2673e4a6c716b8d99de526a',1,'push(Stack_t *stack, int number):&#160;stack.c'],['../stack_8c.html#ad76ee20bb2673e4a6c716b8d99de526a',1,'push(Stack_t *stack, int number):&#160;stack.c']]]
+  ['maximumbst',['maximumBST',['../binary_search_tree_8h.html#a6dae3a281d8dbf16714cfed97bbbf4d7',1,'maximumBST(Node_t **root):&#160;binarySearchTree.c'],['../binary_search_tree_8c.html#a6dae3a281d8dbf16714cfed97bbbf4d7',1,'maximumBST(Node_t **root):&#160;binarySearchTree.c']]],
+  ['minheapify',['minHeapify',['../min_heap_8h.html#a20c092613efb709e7e66e1c2f6017a97',1,'minHeapify(MinHeap *heap, long int index):&#160;minHeap.c'],['../min_heap_8c.html#a20c092613efb709e7e66e1c2f6017a97',1,'minHeapify(MinHeap *heap, long int index):&#160;minHeap.c']]],
+  ['minimumbst',['minimumBST',['../binary_search_tree_8h.html#a09b97b3b32e7972e8cd2e16349f0812d',1,'minimumBST(Node_t **root):&#160;binarySearchTree.c'],['../binary_search_tree_8c.html#a09b97b3b32e7972e8cd2e16349f0812d',1,'minimumBST(Node_t **root):&#160;binarySearchTree.c']]]
 ];

@@ -7,9 +7,11 @@ var searchData=
   ['deletelisttail',['deleteListTail',['../linked_list_8h.html#a77b3fc73c5fdce5e9eebbfebe3e1bb1c',1,'deleteListTail(List_t *list):&#160;linkedList.c'],['../linked_list_8c.html#a77b3fc73c5fdce5e9eebbfebe3e1bb1c',1,'deleteListTail(List_t *list):&#160;linkedList.c']]],
   ['deletenodebst',['deleteNodeBST',['../binary_search_tree_8h.html#a09f565ca80e0a7a63cb0dfb7eb8eba82',1,'deleteNodeBST(Node_t **root, Node_t *node):&#160;binarySearchTree.c'],['../binary_search_tree_8c.html#a09f565ca80e0a7a63cb0dfb7eb8eba82',1,'deleteNodeBST(Node_t **root, Node_t *node):&#160;binarySearchTree.c']]],
   ['dequeue',['dequeue',['../queue_8h.html#ad844d220940a70b3d1ffd7aafbad435b',1,'dequeue(Queue_t *queue):&#160;queue.c'],['../queue_8c.html#ad844d220940a70b3d1ffd7aafbad435b',1,'dequeue(Queue_t *queue):&#160;queue.c']]],
+  ['destroyheap',['destroyHeap',['../min_heap_8h.html#aeef12168724ff76fd1acef34ff95ae06',1,'destroyHeap(MinHeap **heap):&#160;minHeap.c'],['../min_heap_8c.html#aeef12168724ff76fd1acef34ff95ae06',1,'destroyHeap(MinHeap **heap):&#160;minHeap.c']]],
   ['destroylist',['destroyList',['../linked_list_8h.html#a8ab3e0ac3c5c9b1505de283fe42a4bb9',1,'destroyList(List_t **list):&#160;linkedList.c'],['../linked_list_8c.html#a8ab3e0ac3c5c9b1505de283fe42a4bb9',1,'destroyList(List_t **list):&#160;linkedList.c']]],
   ['destroylistnode',['destroyListNode',['../linked_list_8h.html#a4c4622c0d2c12fab6708cd6704033f7a',1,'destroyListNode(Node_t **node):&#160;linkedList.c'],['../linked_list_8c.html#a4c4622c0d2c12fab6708cd6704033f7a',1,'destroyListNode(Node_t **node):&#160;linkedList.c']]],
   ['destroyqueue',['destroyQueue',['../queue_8h.html#a99d5e676e1106aa18af758051f51d278',1,'destroyQueue(Queue_t *queue):&#160;queue.c'],['../queue_8c.html#a99d5e676e1106aa18af758051f51d278',1,'destroyQueue(Queue_t *queue):&#160;queue.c']]],
   ['destroystack',['destroyStack',['../stack_8h.html#a0d48ce92d6b2aa82f0a331c4d14204d4',1,'destroyStack(Stack_t *stack):&#160;stack.c'],['../stack_8c.html#a0d48ce92d6b2aa82f0a331c4d14204d4',1,'destroyStack(Stack_t *stack):&#160;stack.c']]],
-  ['data_20structures_2e',['Data Structures.',['../index.html',1,'']]]
+  ['data_20structures_2e',['Data Structures.',['../index.html',1,'']]],
+  ['datastructures',['DataStructures',['../md__c_1__users__aniket__desktop__c__custom_library__data_structures__r_e_a_d_m_e.html',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['items',['items',['../struct_queue__t.html#a65be00385c213ca17b9e241f89763afe',1,'Queue_t::items()'],['../struct_stack__t.html#a13f9b2a21e971f7e9e782e1e80b18567',1,'Stack_t::items()']]]
+  ['head',['head',['../struct_list__t.html#a4cd0a86bd26d4f568bcf2706a7a5af12',1,'List_t::head()'],['../struct_queue__t.html#ad41039455f9edb119063421a9e338f37',1,'Queue_t::head()']]],
+  ['heapsize',['heapSize',['../struct_min_heap.html#a60a50d95deed8267d632e35ac66b9a49',1,'MinHeap']]]
 ];

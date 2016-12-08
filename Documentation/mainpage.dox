@@ -42,6 +42,18 @@ Header file here: @ref binarySearchTree.h
 
 Source file here: @ref binarySearchTree.c
 
+
+@subsection PriorityQueue
+Priority Queue is a data structure in which elements with low priority is accessed first over others. Priority Queue can be implemented through various other 
+data structures like queue but here minimum heap also known as min-heap is used. Min-heap is a binary tree which must satisfy the following property - every
+parent node must be smaller than both of its children. We don't need to create whole different node object as heap can be implement on simple array due to its
+efficient technique of labeling nodes. 
+
+Header file here: @ref minheap.h
+
+Source file here: @ref minHeap.c
+
+
 @section About
 @version 1.0
 @author Aniket Kumar Tripathi
