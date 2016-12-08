@@ -12,6 +12,8 @@ implementation of data structures in C language.
 
 4) Binary Search Tree
 
+5) Priority Queue ( using minimum Heap )
+
 The inc folder contains the header files(.h extension) and the src folder contains the source files(.c extension).
 
 To read the detailed documentation about the data strucutres go to the folder Documentation and open shortcut to index.html.
