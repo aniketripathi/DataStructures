@@ -8,8 +8,8 @@
 
 
 
-MinHeap *createHeap(long int maxSize){
-	MinHeap *heap = malloc(sizeof(MinHeap));
+MinHeap_t *createHeap(long int maxSize){
+	MinHeap_t *heap = malloc(sizeof(MinHeap_t));
 
 	if(heap != NULL){
 	 heap->arr =  malloc(sizeof(long int) * maxSize);
@@ -20,7 +20,7 @@ MinHeap *createHeap(long int maxSize){
 }
 
 
-void minHeapify(MinHeap *heap, long int index){
+void minHeapify(MinHeap_t *heap, long int index){
 
 	/** get right, left index of parent index **/
 	long int rightIndex = (index << 1) + 1, leftIndex = (index << 1) + 2, smallestIndex;
@@ -42,12 +42,12 @@ void minHeapify(MinHeap *heap, long int index){
 
 
 
-long int heapMinimum(MinHeap *heap){
+long int heapMinimum(MinHeap_t *heap){
 	return (heap->arr[0]);
 }
 
 
-long int heapExtractMinimum(MinHeap *heap){
+long int heapExtractMinimum(MinHeap_t *heap){
 /** if heap is empty **/
 	if(heap->heapSize < 1)	{
 		fputs("Underflow! No element in heap. Returning -1.\n", stderr);
@@ -63,7 +63,7 @@ long int heapExtractMinimum(MinHeap *heap){
 }
 
 
-void heapDecreaseKey(MinHeap *heap, long int index, long int key){
+void heapDecreaseKey(MinHeap_t *heap, long int index, long int key){
 
 #define PARENT(i)	(( (i) - 1)/2)
 
@@ -87,7 +87,7 @@ void heapDecreaseKey(MinHeap *heap, long int index, long int key){
 
 
 
-void heapInsert(MinHeap *heap, long int key){
+void heapInsert(MinHeap_t *heap, long int key){
 	if(heap->heapSize >= heap->maxSize)		fputs("Cannot insert into heap. Heap is full.\n", stderr);
 	else {
 		 ++(heap->heapSize);
@@ -101,7 +101,7 @@ void heapInsert(MinHeap *heap, long int key){
 
 
 
-void destroyHeap(MinHeap **heap){
+void destroyHeap(MinHeap_t **heap){
 
 	free((*heap)->arr);
 	free(*heap);

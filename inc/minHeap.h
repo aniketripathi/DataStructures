@@ -25,7 +25,7 @@ typedef struct{
 
 /** @brief Stores the maximum possible size of the heap. **/
 	long int maxSize;
-}MinHeap;
+}MinHeap_t;
 
 
 /**
@@ -37,7 +37,7 @@ typedef struct{
  * @param maxSize Maximum size of heap to be created.
  * @return Address of the memory allocated to heap.
  */
-MinHeap *createHeap(long int maxSize);
+MinHeap_t *createHeap(long int maxSize);
 
 
 /**
@@ -51,7 +51,7 @@ MinHeap *createHeap(long int maxSize);
  * @param key Final value of key after decreasing.
  * @return void. Returns nothing.
  */
-void heapDecreaseKey(MinHeap *heap, long int index, long int key);
+void heapDecreaseKey(MinHeap_t *heap, long int index, long int key);
 
 
 /**
@@ -63,7 +63,7 @@ void heapDecreaseKey(MinHeap *heap, long int index, long int key);
  * @param heap Heap where extraction is to be performed.
  * @return Minimum element of the heap. If heap is empty then -1 is returned.
  */
-long int heapExtractMinimum(MinHeap *heap);
+long int heapExtractMinimum(MinHeap_t *heap);
 
 
 /**
@@ -74,7 +74,7 @@ long int heapExtractMinimum(MinHeap *heap);
  * @param key Key to be inserted.
  * @return void. Returns nothing.
  */
-void heapInsert(MinHeap *heap, long int key);
+void heapInsert(MinHeap_t *heap, long int key);
 
 
 /**
@@ -85,7 +85,7 @@ void heapInsert(MinHeap *heap, long int key);
  * @param heap Heap whose minimum key is required.
  * @return Minimum key of the heap
  */
-long int heapMinimum(MinHeap *heap);
+long int heapMinimum(MinHeap_t *heap);
 
 
 /**
@@ -99,7 +99,7 @@ long int heapMinimum(MinHeap *heap);
  * @param index	Index(or node) which is to be checked and corrected for violating heap property.
  * @return void. Returns nothing.
  */
-void minHeapify(MinHeap *heap, long int index);
+void minHeapify(MinHeap_t *heap, long int index);
 
 /**
  *@brief Destroys the heap.
@@ -109,7 +109,7 @@ void minHeapify(MinHeap *heap, long int index);
  * @param heap Heap that need to be destroyed.
  * @return void. Returns nothing.
  */
-void destroyHeap(MinHeap **heap);
+void destroyHeap(MinHeap_t **heap);
 
 
 #endif /* MINHEAP_H_ */

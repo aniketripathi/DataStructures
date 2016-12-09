@@ -6,10 +6,10 @@
  */
 #include "../inc/hashTable.h"
 
-HashTable *createHashTable(long int maxSize){
+HashTable_t *createHashTable(long int maxSize){
 
 	/** allocate memory **/
-	HashTable *hashTable = malloc(sizeof(HashTable));
+	HashTable_t *hashTable = malloc(sizeof(HashTable_t));
 	if(hashTable != NULL){
 		hashTable->arr = malloc(sizeof(long int) * maxSize);
 
@@ -23,11 +23,13 @@ HashTable *createHashTable(long int maxSize){
 }
 
 
-void destroyHashTable(HashTable **hashTable){
+
+void destroyHashTable(HashTable_t **hashTable){
 		free((*hashTable)->arr);
 		free(*hashTable);
 		*hashTable = NULL;
 }
+
 
 
 /**
@@ -66,7 +68,7 @@ long int hashFunction(long int key, long int m, long int i){
 }
 
 
-void hashInsert(HashTable *hashTable, long int key){
+void hashInsert(HashTable_t *hashTable, long int key){
 	char isInserted = 0;
 
 	long int i = 0;
@@ -91,7 +93,7 @@ void hashInsert(HashTable *hashTable, long int key){
 
 
 
-long int hashSearch(HashTable *hashTable, long int key){
+long int hashSearch(HashTable_t *hashTable, long int key){
 	long int i = 0;
 
 	while((i*i) < hashTable->maxSize){
@@ -109,7 +111,7 @@ long int hashSearch(HashTable *hashTable, long int key){
 
 
 
-void hashDelete(HashTable *hashTable, long int key){
+void hashDelete(HashTable_t *hashTable, long int key){
 
 	long int slot = hashSearch(hashTable, key);
 		if(slot == -1)		fputs("Element not present in hash table.\n", stderr);
@@ -118,6 +120,6 @@ void hashDelete(HashTable *hashTable, long int key){
 
 
 
-long int getHashCollisions(HashTable *hashTable){
+long int getHashCollisions(HashTable_t *hashTable){
 		return (hashTable->collisions);
 }

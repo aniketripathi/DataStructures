@@ -23,11 +23,11 @@ typedef struct {
 	long int *arr;
 	long int maxSize;
 	long int collisions;
-}HashTable;
+}HashTable_t;
 
-HashTable *createHashTable(long int maxSize);
+HashTable_t *createHashTable(long int maxSize);
 
-void destoryHashTable(HashTable *hashTable);
+void destoryHashTable(HashTable_t *hashTable);
 
 long int hashFunction1(long int key, long int hashSize, long int probValue);
 
@@ -37,12 +37,12 @@ long int hashFunction3(long int key, long int hashSize, long int probValue);
 
 long int hashFunction(long int key, long int hashSize, long int probValue);
 
-long int getHashCollisions(HashTable *hashTable);
+long int getHashCollisions(HashTable_t *hashTable);
 
-void hashDelete(HashTable *hashTable, long int key);
+void hashDelete(HashTable_t *hashTable, long int key);
 
-long int hashSearch(HashTable *hashTable, long int key);
+long int hashSearch(HashTable_t *hashTable, long int key);
 
-void hashInsert(HashTable *hashTable, long int key);
+void hashInsert(HashTable_t *hashTable, long int key);
 
 #endif /* HASHTABLE_H_ */
