@@ -1,8 +1,8 @@
 # DataStructures
-Data Sructures are a way to store, access and manipulate data according to the requirements of the user. This repository contains
-implementation of data structures in C language.
+Data Structures are a way to store, access and manipulate data according to the requirements of the user. This repository contains
+implementation of data structures in C.
 
-###Data Strucutres added:
+###Data Structures added:
 
 1)  Stack
 
