@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['right',['RIGHT',['../binary_search_tree_8h.html#a37c300ebbd374886c2c12aa8a14be25d',1,'binarySearchTree.h']]]
+  ['left',['LEFT',['../binary_search_tree_8h.html#a81b92e2eea74c14d5e416ae55e8e949a',1,'binarySearchTree.h']]]
 ];

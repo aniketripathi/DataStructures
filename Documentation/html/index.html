@@ -85,6 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li class="level2"><a href="#LinkedList">LinkedList</a></li>
 <li class="level2"><a href="#BinarySearchTree">BinarySearchTree</a></li>
 <li class="level2"><a href="#PriorityQueue">PriorityQueue</a></li>
+<li class="level2"><a href="#HashTable">HashTable</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#About">About</a></li>
@@ -119,6 +120,11 @@ PriorityQueue</h2>
 <p>Priority Queue is a data structure in which elements with low priority is accessed first over others. Priority Queue can be implemented through various other data structures like queue but here minimum heap also known as min-heap is used. Min-heap is a binary tree which must satisfy the following property - every parent node must be smaller than both of its children. We don't need to create whole different node object as heap can be implement on simple array due to its efficient technique of labeling nodes.</p>
 <p>Header file here: <a class="el" href="min_heap_8h.html">minheap.h</a></p>
 <p>Source file here: <a class="el" href="min_heap_8c.html">minHeap.c</a></p>
+<h2><a class="anchor" id="HashTable"></a>
+HashTable</h2>
+<p>Hash Table is a data structure which performs search operation in O(1) time. It uses a mathematical formula to calculate a slot(or index of array) for the particular key. If two key have same slot value then it searches for the next one using quadratic probing. The total time search time is generally constant because searching doesn't takes much time. If two keys have same slot then it is called collision. There are various methods for collision resolution. All operation including insertion and deletion takes O(1). Creating of hash table takes O(n) time because it initially clears the hash table with <a class="el" href="hash_table_8h.html#a12c2040f25d8e3a7b9e1c2024c618cb6" title="Sentinel defined to check whether the hash table is empty or not. The hash table created will be init...">INF(a constant)</a>.</p>
+<p>Header file here: <a class="el" href="hash_table_8h.html">hashTable.h</a></p>
+<p>Source file here: <a class="el" href="hash_table_8c.html">hashTable.c</a></p>
 <h1><a class="anchor" id="About"></a>
 About</h1>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>

@@ -96,7 +96,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae662c6170d810587a01d6e3dafce921b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binary_search_tree_8c.html#ae662c6170d810587a01d6e3dafce921b">showBSTError</a> (char *message)</td></tr>
-<tr class="memdesc:ae662c6170d810587a01d6e3dafce921b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to display error message.  <a href="#ae662c6170d810587a01d6e3dafce921b">More...</a><br /></td></tr>
 <tr class="separator:ae662c6170d810587a01d6e3dafce921b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a436d14be6f8788578c26fbc9d8ef8463"><td class="memItemLeft" align="right" valign="top"><a class="el" href="binary_search_tree_8h.html#a8ca06e83620cd1564591e65407096bc2">Node_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binary_search_tree_8c.html#a436d14be6f8788578c26fbc9d8ef8463">createBSTNode</a> (int data)</td></tr>
 <tr class="memdesc:a436d14be6f8788578c26fbc9d8ef8463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a BST node.  <a href="#a436d14be6f8788578c26fbc9d8ef8463">More...</a><br /></td></tr>
@@ -162,7 +161,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Node_t* Address of the node created. NULL if node cannot be created. </dd></dl>
-<p>set default attributes </p>
 
 </div>
 </div>
@@ -181,7 +179,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Deletes a BST node. </p>
-<p>delete a BST node </p>
+<p>Deletes a Binary Search Tree node and frees up the memory. The pointer is set to NULL.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Address of the pointer to be freed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void. Returns nothing. </dd></dl>
 
 </div>
 </div>
@@ -219,10 +224,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void. Returns nothing. </dd></dl>
-<p>successor will take place of the node when deleted</p>
-<p>associate right, left , parent of node and successor</p>
-<p>finally replace node with successor</p>
-<p>replace node with successor and associate their left only </p>
 
 </div>
 </div>
@@ -286,9 +287,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void. Returns nothing. </dd></dl>
-<p>valid node</p>
-<p>search for parent node where node is to be inserted</p>
-<p>insert node into parent node according to its key </p>
 
 </div>
 </div>
@@ -315,7 +313,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Node_t* Address of the node containing the maximum value. </dd></dl>
-<p>maximum is the right most node of the tree </p>
 
 </div>
 </div>
@@ -342,7 +339,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Node_t* Address of the node containing the minimum value. </dd></dl>
-<p>minimum is at the left most node of the tree </p>
 
 </div>
 </div>
@@ -397,9 +393,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the predecessor node of the given node. </p>
-<p>Predecessor is the smallest element greater than current node </p>
-<p>search for maximum in left subtree</p>
-<p>search in ancestors </p>
+<p>Predecessor is the greatest element smaller than the data of the given node. It is the previous element that will appear in inorder traversal. This function will return the predecessor of the given node. If node or root is empty then error message is displayed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Address of the pointer of the root node. </td></tr>
+    <tr><td class="paramname">node</td><td>Address of the node whose successor is to be searched. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Node_t* Address of the predecessor of the node. If not found then NULl is returned.S </dd></dl>
 
 </div>
 </div>
@@ -460,7 +462,16 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Replaces a given node of a tree with another node. </p>
-<p>It replaces a node in a tree with another node. Note that the initial node is not deleted </p>
+<p>This function replaces a given node of the tree with another node. Remember that this function doesn't check for the binary search property of the tree and hence must be used very carefully. Using this function incorrectly might destroy the binary search property of the tree.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Address of the pointer of the root node. </td></tr>
+    <tr><td class="paramname">initial</td><td>Address of the node to be replaced. </td></tr>
+    <tr><td class="paramname">final</td><td>Address of the node to replace the initial node. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void. Returns nothing. </dd></dl>
 
 </div>
 </div>
@@ -498,7 +509,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Node_t* Address of the node containing the key. NULl is returned if no such node is found. </dd></dl>
-<p>search node </p>
 
 </div>
 </div>
@@ -523,16 +533,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>A function to display error message. </p>
-<p>This is a static method which prints an error message in standard error stream -stderr. You can create your own error handler and add some more procedures in the function. This function is not displayed in header file.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">message</td><td>Message to be displayed. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void, Returns nothing. </dd></dl>
 
 </div>
 </div>
@@ -561,9 +561,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the successor node of the given node. </p>
-<p>Successor is the smallest element greater than current node </p>
-<p>search for minimum in right subtree</p>
-<p>search in ancestors </p>
+<p>Successor is the smallest element greater than the data of the given node. It is the next element that will appear in inorder traversal. This function will return the successor of the given node. If node or root is empty then error message is displayed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Address of the pointer of the root node. </td></tr>
+    <tr><td class="paramname">node</td><td>Address of the node whose successor is to be searched. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Node_t* Address of the successor of the node. If not found then NULL is returned. </dd></dl>
 
 </div>
 </div>

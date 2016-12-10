@@ -54,6 +54,16 @@ Header file here: @ref minheap.h
 Source file here: @ref minHeap.c
 
 
+@subsection HashTable
+Hash Table is a data structure which performs search operation in O(1) time. It uses a mathematical formula to calculate a slot(or index of array) for the particular key. If two key have same
+slot value then it searches for the next one using quadratic probing. The total time search time is generally constant because searching doesn't takes much time. If two keys have
+same slot then it is called collision. There are various methods for collision resolution. All operation including insertion and deletion takes O(1). Creating of hash table takes O(n) time because
+it initially clears the hash table with INF(a constant).
+
+Header file here: @ref hashTable.h
+
+Source file here: @ref hashTable.c
+
 @section About
 @version 1.0
 @author Aniket Kumar Tripathi
