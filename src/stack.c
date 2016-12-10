@@ -5,7 +5,7 @@
  *      Author: Aniket
  */
 
-/**
+/*
  * This file contains the implementation of stack.h
  *
  */

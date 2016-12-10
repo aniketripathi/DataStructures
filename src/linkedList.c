@@ -114,7 +114,7 @@ List_t *createList(size_t number, int data){
 	}
 	List_t *list = createListWithNode(createListNode(data));
 	size_t count = number - 1;
-	/* nodes will be added to head using **/
+	/* nodes will be added to head using */
 	while(count--)		addAtListHead(list, createListNode(data));
 	return list;
 }
@@ -164,7 +164,7 @@ void deleteListTail(List_t *list){
 			showListError("Cannot delete tail. The list is empty or destroyed");
 
 		else {
-				/** tail will behave similar to head **/
+				/* tail will behave similar to head */
 			Node_t *prevNode = NULL;
 			Node_t *currentNode = list->tail;
 			Node_t *nextNode = NEXTNODE(prevNode, currentNode);
@@ -224,7 +224,7 @@ void traverseList(List_t *list, char separator, FILE *stream){
 		Node_t *prevNode = NULL;
 		Node_t *currentNode = list->head;
 		while(currentNode != NULL){
-		/** If the current node is last node, then new line character is used instead of separator character */
+		/* If the current node is last node, then new line character is used instead of separator character */
 			fprintf(stream, "%d%c", currentNode->data, ((currentNode != list->tail)?separator:'\n'));
 			Node_t *temp = currentNode;
 			currentNode = NEXTNODE(prevNode, currentNode);

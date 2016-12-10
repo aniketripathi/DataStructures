@@ -8,12 +8,12 @@
 
 HashTable_t *createHashTable(long int maxSize){
 
-	/** allocate memory **/
+	/* allocate memory */
 	HashTable_t *hashTable = malloc(sizeof(HashTable_t));
 	if(hashTable != NULL){
 		hashTable->arr = malloc(sizeof(long int) * maxSize);
 
-/** set initial value to the hashTable, it will help to identify whether hash table is empty or not **/
+/* set initial value to the hashTable, it will help to identify whether hash table is empty or not */
 		long int i;
 		for(i = 0; i < maxSize; i++)		hashTable->arr[i] = INF;
 
@@ -32,37 +32,31 @@ void destroyHashTable(HashTable_t **hashTable){
 
 
 
-/**
- * Multiplication method for hash function using quadratic probing
- */
 long int hashFunction1(long int key, long int m, long int i){
 	long int hashValue;
-
+/* multiplication method */
 	hashValue = (long int) (m * fmod( key * A, 1) );
-/** quadratic probing **/
+/* quadratic probing */
 	hashValue +=  (i*i);
 	return hashValue;
 }
 
-/**
- * division method
- */
+
+
 long int hashFunction2(long int key, long int m, long int i){
 	long int hashValue;
-
+/* division method */
 		hashValue = key % m;
-	/** quadratic probing **/
+	/* quadratic probing */
 		hashValue +=  (i*i);
 	return hashValue;
 }
-
 
 long int hashFunction3(long int key, long int m, long int i){
 		return (hashFunction1(key, m, i) + hashFunction2(key, m , i))/2 ;
 }
 
 
-/** hash function currently in use **/
 long int hashFunction(long int key, long int m, long int i){
 	return (hashFunction1(key, m, i));
 }
