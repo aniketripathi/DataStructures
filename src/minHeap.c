@@ -79,10 +79,10 @@ void heapDecreaseKey(MinHeap_t *heap, long int index, long int key){
 			heap->arr[index] = temp;
 
 			index = PARENT(index);
-#undef PARENT
 		}
 
 	}
+#undef PARENT
 }
 
 
