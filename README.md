@@ -2,7 +2,7 @@
 Data Structures are a way to store, access and manipulate data according to the requirements of the user. This repository contains
 implementation of data structures in C.
 
-###Data Structures added:
+### Data Structures added:
 
 1)  Stack
 
