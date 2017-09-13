@@ -182,7 +182,7 @@ void postorderTraversalBST(Node_t **root){
 
 /* Successor is the smallest element greater than current node */
 Node_t *successorBST(Node_t **root, Node_t *node){
-	if(node == NULL || node ==  NULL){
+	if(*root == NULL || node ==  NULL){
 		showBSTError("Tree or node is NULL. Returning -1/n");
 		return NULL;
 	}
@@ -203,7 +203,7 @@ return tempParent;
 /* Predecessor is the smallest element greater than current node */
 Node_t *predecessorBST(Node_t **root, Node_t *node){
 
-	if(node == NULL || node ==  NULL){
+	if(*root == NULL || node ==  NULL){
 			showBSTError("Tree or node is NULL. Returning -1/n");
 			return NULL;
 	}
