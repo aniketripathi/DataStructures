@@ -34,16 +34,16 @@ Stack_t *createStack(unsigned int size){
 }
 
 
-void destroyStack(Stack_t *stack){
-	free(stack->items);
-	free(stack);
-	stack = NULL;
+void destroyStack(Stack_t **stack){
+	free((*stack)->items);
+	free(*stack);
+	*stack = NULL;
 }
 
 
 Stack_t *resize(Stack_t *stack, unsigned int size){
 		if(size == 0){
-			destroyStack(stack);
+			destroyStack(&stack);
 			return stack;
 		}
 	realloc(stack, size * sizeof(unsigned int));
