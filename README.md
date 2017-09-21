@@ -16,6 +16,8 @@ implementation of data structures in C.
 
 6) Hash Tables
 
+7) Red Black Tree
+
 The inc folder contains the header files(.h extension) and the src folder contains the source files(.c extension).
 
 To read the detailed documentation about the data structures go to the folder Documentation and open shortcut to index.html.
